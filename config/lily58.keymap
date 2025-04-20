@@ -11,18 +11,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        hold_to_layer: hold_to_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TO_LAYER";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,11 +24,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3           &kp N4   &kp N5                                                           &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E            &kp R    &kp T                                                            &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D            &kp F    &kp G                                                            &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C            &kp V    &kp B             &kp ESC                      &kp SINGLE_QUOTE  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &rgb_ug RGB_TOG  &kp TAB  &kp LEFT_COMMAND  &hold_to_layer 1 LG(LCMD)    &kp RET           &mo 2   &kp BSPC  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3           &kp N4   &kp N5                                            &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp E            &kp R    &kp T                                             &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&kp LCTRL  &kp A   &kp S   &kp D            &kp F    &kp G                                             &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C            &kp V    &kp B             &kp ESC       &kp SINGLE_QUOTE  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &rgb_ug RGB_TOG  &kp TAB  &kp LEFT_COMMAND  &lt 1 LGUI    &kp RET           &mo 2   &kp BSPC  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
