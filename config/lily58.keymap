@@ -57,8 +57,8 @@
             bindings = <
 &kp LS(LC(LA(LG(F1))))  &kp N1  &kp N2                   &kp N3                     &kp N4                       &kp N5                                         &kp N6       &kp N7                        &kp N8                  &kp N9                    &kp N0    &kp MINUS
 &kp TAB                 &kp Q   &kp W                    &kp E                      &kp R                        &kp T                                          &kp Y        &kp U                         &kp I                   &kp O                     &kp P     &kp EQUAL
-&kp LEFT_SHIFT          &kp A   &hold_or_tap LEFT_ALT S  &hold_or_tap LEFT_SHIFT D  &hold_or_tap LEFT_CONTROL F  &kp G                                          &kp H        &hold_or_tap RIGHT_CONTROL J  &hold_or_tap RSHIFT K   &hold_or_tap RIGHT_ALT L  &kp SEMI  &bl BL_CYCLE
-&kp LEFT_ALT            &kp Z   &kp X                    &kp C                      &kp V                        &kp B           &kp ESC      &kp SINGLE_QUOTE  &kp N        &kp M                         &kp COMMA               &kp DOT                   &kp FSLH  &bl BL_ON
+&kp LEFT_SHIFT          &kp A   &hold_or_tap LEFT_ALT S  &hold_or_tap LEFT_SHIFT D  &hold_or_tap LEFT_CONTROL F  &kp G                                          &kp H        &hold_or_tap RIGHT_CONTROL J  &hold_or_tap RSHIFT K   &hold_or_tap RIGHT_ALT L  &kp SEMI  &kp HOME
+&kp LEFT_ALT            &kp Z   &kp X                    &kp C                      &kp V                        &kp B           &kp ESC      &kp SINGLE_QUOTE  &kp N        &kp M                         &kp COMMA               &kp DOT                   &kp FSLH  &kp END
                                                          &kp LS(TAB)                &kp TAB                      &lt 1 LEFT_GUI  &kp SPACE    &lt 2 BACKSPACE   &lt 3 ENTER  &kp ENTER                     &kp LS(LC(LG(LA(F2))))
             >;
 
