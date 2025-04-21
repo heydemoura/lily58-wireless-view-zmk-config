@@ -22,6 +22,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <54 30>;
+        };
+
+        cmd_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <53 40>;
+        };
+
+        shift_cmd_tab {
+            bindings = <&kp LS(LG(TAB))>;
+            key-positions = <53 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
