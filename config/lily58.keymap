@@ -23,11 +23,11 @@
 
             display-name = "Base";
             bindings = <
-&kp LS(LC(F16))  &kp N1  &kp N2  &kp N3            &kp N4       &kp N5                                   &kp N6         &kp N7            &kp N8           &kp N9   &kp N0    &kp MINUS
-&kp TAB          &kp Q   &kp W   &kp E             &kp R        &kp T                                    &kp Y          &kp U             &kp I            &kp O    &kp P     &kp EQUAL
-&kp LEFT_SHIFT   &kp A   &kp S   &kp D             &kp F        &kp G                                    &kp H          &kp J             &kp K            &kp L    &kp SEMI  &bl BL_CYCLE
-&kp LEFT_ALT     &kp Z   &kp X   &kp C             &kp V        &kp B    &kp ESC       &kp SINGLE_QUOTE  &kp N          &kp M             &kp COMMA        &kp DOT  &kp FSLH  &bl BL_ON
-                                 &kp LEFT_CONTROL  &kp LS(TAB)  &kp TAB  &lt 1 LGUI    &kp ENTER         &kp BACKSPACE  &kp LEFT_CONTROL  &kp LS(LC(F18))
+&kp LS(LC(F16))  &kp N1  &kp N2          &kp N3            &kp N4              &kp N5                                   &kp N6     &kp N7               &kp N8           &kp N9           &kp N0    &kp MINUS
+&kp TAB          &kp Q   &kp W           &kp E             &kp R               &kp T                                    &kp Y      &kp U                &kp I            &kp O            &kp P     &kp EQUAL
+&kp LEFT_SHIFT   &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G                                    &kp H      &mt RIGHT_CONTROL J  &mt RSHIFT K     &mt RIGHT_ALT L  &kp SEMI  &bl BL_CYCLE
+&kp LEFT_ALT     &kp Z   &kp X           &kp C             &kp V               &kp B    &kp ESC       &kp SINGLE_QUOTE  &kp N      &kp M                &kp COMMA        &kp DOT          &kp FSLH  &bl BL_ON
+                                         &kp LEFT_CONTROL  &kp LS(TAB)         &kp TAB  &lt 1 LGUI    &kp SPACE         &kp ENTER  &kp BACKSPACE        &kp LS(LC(F18))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
