@@ -37,7 +37,7 @@
         tmux_next_window: tmux_next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(A) &kp N>;
+            bindings = <&macro_tap>, <&kp LC(A) &kp N>;
 
             label = "TMUX_NEXT_WINDOW";
         };
