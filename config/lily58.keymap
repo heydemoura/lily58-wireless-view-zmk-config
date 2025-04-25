@@ -41,6 +41,16 @@
             bindings = <&tmux_split_vertically>;
             key-positions = <49 35 23>;
         };
+
+        better_task_switcher {
+            bindings = <&better_task_switcher>;
+            key-positions = <52 16>;
+        };
+
+        better_task_switcher_shifted {
+            bindings = <&better_task_switcher_shifted>;
+            key-positions = <52 15>;
+        };
     };
 
     macros {
@@ -55,7 +65,7 @@
         tmux_split_horizontally: tmux_split_horizontally {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(A) &kp LS(SINGLE_QUOTE)>;
+            bindings = <&macro_tap>, <&kp LC(A) &kp DOUBLE_QUOTES>;
 
             label = "TMUX_SPLIT_HORIZONTALLY";
         };
@@ -66,6 +76,22 @@
             bindings = <&macro_tap>, <&kp LC(A) &kp LS(N5)>;
 
             label = "TMUX_SPLIT_VERTICALLY";
+        };
+
+        better_task_switcher: better_task_switcher {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp TAB>;
+
+            label = "BETTER_TASK_SWITCHER";
+        };
+
+        better_task_switcher_shifted: better_task_switcher_shifted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp LS(TAB)>;
+
+            label = "BETTER_TASK_SWITCHER_SHIFTED";
         };
     };
 
